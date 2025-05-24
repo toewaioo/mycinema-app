@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title area: This could be set directly on the AlertDialog or in the custom layout -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingBottom="15dp"
+        android:text="Extract Link"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?attr/title_text_color"
+        android:textStyle="bold" />
+
+    <!-- Horizontal layout for "link" label, copy icon, and share icon -->
+    <LinearLayout
+        android:id="@+id/llLinkActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Link:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?attr/title_text_color" />
+
+        <!-- Copy icon (set your drawable accordingly) -->
+        <ImageView
+            android:id="@+id/ivCopy"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Copy"
+            android:src="@drawable/ic_copy" />
+
+        <!-- Share icon (set your drawable accordingly) -->
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="Share"
+            android:src="@drawable/ic_share" />
+    </LinearLayout>
+
+    <!-- EditText for displaying the link -->
+    <EditText
+        android:id="@+id/etLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter link here"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:layout_marginBottom="20dp"
+        android:textColor="?attr/title_text_color"
+        android:textColorHint="?attr/title_text_color" />
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="32dp">
+
+        <!-- Optional spacing or dividers can be added here -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btnNeutral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="Cancel"
+                android:textColor="?attr/colorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btnDirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+
+                android:gravity="center|end"
+                android:text="Direct"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btnLeetdev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+
+                android:focusable="true"
+                android:gravity="center|end"
+                android:text="Leetdev"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

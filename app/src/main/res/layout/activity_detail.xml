@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/teach_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginEnd="10dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+           >
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/teach_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/dot_vertical"/>
+
+            <ImageView
+                android:id="@+id/teach_heart"
+                android:padding="5dp"
+                android:layout_toStartOf="@id/teach_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/heart_fill"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="?sheet_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="50dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading - 100%"/>
+            <ImageView
+                android:id="@+id/teach_inject"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_inject"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

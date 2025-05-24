@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.two.my_libs.views.ptr.PtrFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/store_house_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorPrimary"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="200"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorSurface"
+                tools:context=".ui.home.HomeFragment">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/collapsing_toolbar_appbarheight"
+                    android:fitsSystemWindows="true"
+                    tools:ignore="MissingConstraints">
+
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsingToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        app:statusBarScrim="@android:color/transparent"
+                        app:titleEnabled="true">
+
+                        <LinearLayout
+                            android:id="@+id/scrollContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/colorSurface"
+                            android:orientation="vertical"
+                            app:layout_collapseMode="parallax">
+
+                            <com.two.my_libs.shimmer.ShimmerFrameLayout
+                                android:id="@+id/shimmer_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:shimmer_auto_start="true"
+                                app:shimmer_duration="1500">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/shimmer_background"
+                                    android:clickable="true"
+                                    android:clipToOutline="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:outlineProvider="background" />
+                            </com.two.my_libs.shimmer.ShimmerFrameLayout>
+
+
+                            <com.two.channelmyanmar.viewpager.AutoScrollViewPager
+                                android:id="@+id/view_pager"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp" />
+
+                            <com.two.my_libs.views.CuteIndicator
+                                android:id="@+id/indicatorcute"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                app:IndicatorColor="?un_selected_color"
+                                app:IndicatorDiaDimension="10dp"
+                                app:IndicatorIsAnimation="true"
+                                app:IndicatorIsShadow="true"
+                                app:IndicatorSelectedWidthDimension="30dp"
+                                app:IndicatorShadowColor="#44000000"
+                                app:IndicatorShadowRadiusDimension="2dp"
+                                app:IndicatorSpaceDimension="5dp" />
+
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/tool_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/colorPrimary"
+                            app:layout_collapseMode="pin"
+                            app:subtitleTextColor="?attr/title_text_color"
+                            app:titleTextColor="?attr/title_text_color">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/app_name"
+                                    android:textColor="?attr/title_text_color"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+                                <ImageView
+                                    android:id="@+id/watch_later"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="@string/watch_later"
+                                    android:src="?icon_bookmark"/>
+                            </RelativeLayout>
+
+                        </androidx.appcompat.widget.Toolbar>
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nestedScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Random Movies"
+                                android:textColor="?attr/colorAccent"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/view_pagernewrelease"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <View
+                                android:id="@+id/divider2"
+                                android:layout_width="5dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:background="?attr/colorAccent" />
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Movies"
+                                android:textColor="?attr/colorAccent"
+                                android:textStyle="bold"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/divider2"
+                                android:layout_margin="5dp"/>
+
+
+                            <TextView
+                                android:id="@+id/movieSeeMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="6dp"
+                                android:textColor="?attr/title_text_color"
+                                android:text="See More"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/view_pagerMovie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <View
+                                android:id="@+id/divider3"
+                                android:layout_width="5dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:background="?attr/colorAccent" />
+                            <TextView
+                                android:textColor="?attr/colorAccent"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Series"
+                                android:textStyle="bold"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/divider3"
+                                android:layout_margin="5dp"/>
+
+                            <TextView
+                                android:id="@+id/seriesSeeMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="6dp"
+                                android:textColor="?attr/title_text_color"
+                                android:text="See More"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/view_pagerSesries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+
+                </androidx.core.widget.NestedScrollView>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </com.two.my_libs.views.ptr.PtrFrameLayout>
+</LinearLayout>

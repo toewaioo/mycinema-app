@@ -1,0 +1,15 @@
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_copy"
+        android:title="Copy"
+        android:icon="@drawable/ic_copy" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share"
+        android:icon="@drawable/ic_share" />
+
+    <!-- Add more items with icons as needed -->
+</menu>

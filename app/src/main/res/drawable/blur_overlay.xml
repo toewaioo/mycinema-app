@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Semi-transparent background (adjust alpha value as needed) -->
+    <solid android:color="#CCFFFFFF" /> <!-- ~70% opacity white -->
+
+    <!-- Optional rounded corners -->
+    <corners android:radius="8dp" />
+</shape>

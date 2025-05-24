@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected color -->
+    <item android:color="#E08814" android:state_checked="true"/>
+    <!-- Unselected color -->
+    <item android:color="#76FF03"/>
+</selector>

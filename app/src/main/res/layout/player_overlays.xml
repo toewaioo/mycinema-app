@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Controller Container -->
+    <FrameLayout
+        android:id="@+id/controller_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000">
+
+        <!-- Your custom controller layout from androidx.media3 -->
+        <include layout="@layout/custom_player_control_view"/>
+
+    </FrameLayout>
+
+    <!-- Play/Pause Animation -->
+    <ImageView
+        android:id="@+id/play_pause_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@drawable/play"
+        android:visibility="gone"/>
+
+    <!-- Seek Time Indicator -->
+    <TextView
+        android:id="@+id/seck_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:background="#80000000"
+        android:visibility="gone"/>
+
+    <!-- Brightness Control -->
+    <FrameLayout
+        android:id="@+id/brightness_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/brightness_progress"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"/>
+
+    </FrameLayout>
+
+    <!-- Volume Control -->
+    <FrameLayout
+        android:id="@+id/volume_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/volume_progress"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"/>
+
+    </FrameLayout>
+
+</merge>

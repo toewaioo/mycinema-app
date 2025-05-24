@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleLayout">
+        <attr name="bl_arrowWidth" format="dimension|reference" />
+        <attr name="bl_cornersRadius" format="dimension|reference" />
+        <attr name="bl_arrowHeight" format="dimension|reference" />
+        <attr name="bl_arrowPosition" format="dimension|reference" />
+        <attr name="bl_bubbleColor" format="color|reference" />
+        <attr name="bl_strokeWidth" format="dimension|reference" />
+        <attr name="bl_strokeColor" format="color|reference" />
+
+        <attr name="bl_arrowDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+            <enum name="left_center" value="4"/>
+            <enum name="right_center" value="5"/>
+            <enum name="top_center" value="6"/>
+            <enum name="bottom_center" value="7"/>
+            <enum name="top_right" value="8"/>
+            <enum name="bottom_right" value="9"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CuteIndicator">
+        <attr name="IndicatorColor" format="color"/>
+        <attr name="IndicatorShadowColor" format="color"/>
+        <attr name="IndicatorSelectedWidthDimension" format="dimension"/>
+        <attr name="IndicatorDiaDimension" format="dimension"/>
+        <attr name="IndicatorSpaceDimension" format="dimension"/>
+        <attr name="IndicatorShadowRadiusDimension" format="dimension"/>
+        <attr name="IndicatorIsAnimation" format="boolean"/>
+        <attr name="IndicatorIsShadow" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SmallBangView">
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean"/>
+        <attr name="anim_scale_factor" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="ChipView">
+        <attr name="chip_spacing" format="dimension" />
+        <attr name="chip_line_spacing" format="dimension" />
+        <attr name="chip_padding" format="dimension" />
+        <attr name="chip_side_padding" format="dimension" />
+        <attr name="chip_corner_radius" format="dimension" />
+        <attr name="chip_background" format="reference" />
+        <attr name="chip_background_selected" format="reference" />
+        <attr name="chip_background_res" format="reference" />
+
+    </declare-styleable>
+    <declare-styleable name="NavigationTabBar">
+        <attr name="ntb_titled" format="boolean"/>
+        <attr name="ntb_badged" format="boolean"/>
+        <attr name="ntb_scaled" format="boolean"/>
+        <attr name="ntb_tinted" format="boolean"/>
+        <attr name="ntb_swiped" format="boolean"/>
+        <attr name="ntb_badge_use_typeface" format="boolean"/>
+
+        <attr name="ntb_title_size" format="dimension"/>
+        <attr name="ntb_title_mode" format="enum">
+            <enum name="all" value="0"/>
+            <enum name="active" value="1"/>
+        </attr>
+
+        <attr name="ntb_badge_size" format="dimension"/>
+        <attr name="ntb_badge_position" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ntb_badge_gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+        <attr name="ntb_badge_bg_color" format="color"/>
+        <attr name="ntb_badge_title_color" format="color"/>
+
+        <attr name="ntb_typeface" format="string"/>
+        <attr name="ntb_corners_radius" format="dimension"/>
+        <attr name="ntb_icon_size_fraction" format="float"/>
+        <attr name="ntb_animation_duration" format="integer"/>
+
+        <attr name="ntb_inactive_color" format="color"/>
+        <attr name="ntb_active_color" format="color"/>
+        <attr name="ntb_bg_color" format="color"/>
+
+        <attr name="ntb_preview_colors" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CoverImageView">
+        <attr name="coverColor" format="reference|color"/>
+    </declare-styleable>
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="shimmer_clip_to_children" format="boolean"/>
+        <attr name="shimmer_colored" format="boolean"/>
+        <attr name="shimmer_base_color" format="color"/>
+        <attr name="shimmer_highlight_color" format="color"/>
+        <attr name="shimmer_base_alpha" format="float"/>
+        <attr name="shimmer_highlight_alpha" format="float"/>
+        <attr name="shimmer_auto_start" format="boolean"/>
+        <attr name="shimmer_duration" format="integer"/>
+        <attr name="shimmer_repeat_count" format="integer"/>
+        <attr name="shimmer_repeat_delay" format="integer"/>
+        <attr name="shimmer_repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="shimmer_start_delay" format="integer"/>
+        <attr name="shimmer_direction" format="enum">
+            <enum name="left_to_right" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="bottom_to_top" value="3"/>
+        </attr>
+        <attr name="shimmer_dropoff" format="float"/>
+        <attr name="shimmer_fixed_width" format="dimension"/>
+        <attr name="shimmer_fixed_height" format="dimension"/>
+        <attr name="shimmer_intensity" format="float"/>
+        <attr name="shimmer_width_ratio" format="float"/>
+        <attr name="shimmer_height_ratio" format="float"/>
+        <attr name="shimmer_shape" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="shimmer_tilt" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="ShimmerTextView">
+        <!-- Shimmer effect color -->
+        <attr name="shimmerColor" format="color" />
+        <!-- Duration of the shimmer animation in milliseconds -->
+        <attr name="shimmerDuration" format="integer" />
+        <!-- Custom font file path (e.g., "fonts/custom_font.ttf") -->
+        <attr name="customFont" format="string" />
+        <!-- Text size for the shimmer text -->
+        <attr name="shimmerTextSize" format="dimension" />
+        <!-- Text color for the shimmer text -->
+        <attr name="shimmerTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="NavigationView">
+        <attr name="iconSize" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="activeTextColor" format="reference|color"/>
+        <attr name="unactiveTextColor" format="reference|color"/>
+        <attr name="icon_margin_top" format="dimension"/>
+        <attr name="text_margin_bottom" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="showLine" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+</resources>

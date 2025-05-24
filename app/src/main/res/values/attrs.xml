@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+        <attr name="colorSurface" format="reference|color"/>
+        <attr name="colorPrimary" format="reference|color"/>
+        <attr name="colorAccent" format="reference|color"/>
+        <attr name="colorPrimaryDark" format="reference|color"/>
+        <attr name="title_text_color" format="reference|color"/>
+        <attr name="sub_title_text_color" format="reference|color"/>
+        <attr name="button_text_color" format="reference|color"/>
+        <attr name="button_bg_selector" format="reference"/>
+        <attr name="icon_search" format="reference"/>
+        <attr name="icon_star" format="reference"/>
+        <attr name="rounded_bg" format="reference"/>
+        <attr name="icon_change_theme" format="reference"/>
+        <attr name="img_cover_color" format="reference"/>
+        <attr name="progress_indeterminate" format="reference"/>
+        <attr name="progress_horizontal" format="reference"/>
+        <attr name="title_text_style" format="reference"/>
+        <attr name="un_selected_color" format="color|reference"/>
+        <attr name="fab_padding" format="reference|dimension"/>
+        <attr name="sheet_bg" format="reference|color"/>
+        <attr name="icon_email" format="reference"/>
+        <attr name="icon_chevron" format="reference"/>
+        <attr name="icon_dark_mode" format="reference"/>
+        <attr name="icon_inject" format="reference"/>
+        <attr name="icon_show_adult" format="reference"/>
+        <attr name="icon_help" format="reference"/>
+        <attr name="icon_info" format="reference"/>
+        <attr name="icon_profile" format="reference"/>
+        <attr name="icon_logout" format="reference"/>
+        <attr name="icon_privacy" format="reference"/>
+        <attr name="icon_bookmark" format="reference"/>
+
+        <attr name="icon_link_generate" format="reference"/>
+        <attr name="icon_system_download" format="reference"/>
+
+        <attr name="icon_api_key" format="reference"/>
+
+    </declare-styleable>
+    <declare-styleable name="CuteIndicator">
+        <attr name="IndicatorColor" format="color"/>
+        <attr name="IndicatorShadowColor" format="color"/>
+        <attr name="IndicatorSelectedWidthDimension" format="dimension"/>
+        <attr name="IndicatorDiaDimension" format="dimension"/>
+        <attr name="IndicatorSpaceDimension" format="dimension"/>
+        <attr name="IndicatorShadowRadiusDimension" format="dimension"/>
+        <attr name="IndicatorIsAnimation" format="boolean"/>
+        <attr name="IndicatorIsShadow" format="boolean"/>
+    </declare-styleable>
+
+</resources>

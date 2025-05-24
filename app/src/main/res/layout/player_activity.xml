@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- res/layout/activity_player.xml -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        app:controller_layout_id="@layout/custom_playback_view"
+        app:show_buffering="when_playing"
+        app:buffered_color="@color/teal_200"
+        app:hide_on_touch="false"
+        app:player_layout_id="@layout/exo_layout_view"
+        app:resize_mode="fit"
+
+        app:show_timeout="4000"
+        app:shutter_background_color="#000000"
+        app:surface_type="surface_view"
+        app:use_controller="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

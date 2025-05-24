@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?colorSurface"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/adult_content_image"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="Adult image"
+        android:src="?icon_show_adult" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?title_text_color"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/adult_content_image"
+        android:text="@string/adult_content"/>
+
+</RelativeLayout>

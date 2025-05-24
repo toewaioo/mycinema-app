@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- -->
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FFFAFAFF</color>
+    <color name="colorPrimaryDark">#FAFAFAFF</color>
+    <color name="colorAccent">#FF0000FF</color>
+    <color name="colorBackground">#FFFFFFFF</color>
+    <color name="unselectedColor">#FF888888</color>
+
+    <color name="colorPrimaryVariant">#3700B3FF</color>
+
+    <color name="title_text_color">#DE000000</color>
+    <color name="sub_title_text_color">#8A5B5757</color>
+    <color name="button_text_color">#353434</color>
+    <!-- end light-->
+
+    <!-- black theme -->
+    <color name="black_unselectedColor">#FFFFFFFF</color>
+    <color name="black_colorPrimary">#FF263238</color>
+    <color name="black_colorPrimaryDark">#424242FF</color>
+    <color name="black_colorAccent">#FFFFFF00</color>
+    <color name="black_colorBackground">#1A1B20FF</color>
+    <color name="black_title_text_color">#FFFFFFFF</color>
+    <color name="black_sub_title_text_color">#B3FFFFFF</color>
+    <color name="black_button_text_color">#FAFAFAFA</color>
+    <color name="black_button_bg_normal_color">#757575FF</color>
+    <color name="black_button_bg_pressed_color">#212121FF</color>
+    <color name="black_img_cover_color">#409E9E9E</color>
+
+
+
+</resources>

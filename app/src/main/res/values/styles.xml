@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationTheme" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+    </style>
+    <style name="ToolbarPopUpTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="actionOverflowButtonStyle">@style/CustomStyle</item>
+    </style>
+    <style name="CustomStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/dot_vertical</item>
+    </style>
+    <style name="IconStyle">
+        <item name="android:tint">?attr/title_text_color</item>
+        <item name="tint">?attr/title_text_color</item>
+    </style>
+</resources>
